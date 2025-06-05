@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="250dp"
+  android:layout_height="wrap_content"
+  android:background="@color/todo_background_todo_app"
+  android:orientation="vertical"
+  android:padding="16dp">
+
+  <EditText
+    android:id="@+id/etTask"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:hint="@string/todo_dialog_add_task"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white">
+  </EditText>
+
+  <RadioGroup
+    android:id="@+id/rgCategories"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--con checked =true aparece marcado
+    con buttonTint pongo color al botón, distinto de color de txto-->
+    <RadioButton
+      android:id="@+id/rdBtnBusiness"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:buttonTint="@color/todo_business_category"
+      android:checked="true"
+      android:text="@string/todo_category_business"
+      android:textColor="@color/white">
+    </RadioButton>
+    <RadioButton
+      android:id="@+id/rdBtnPersonal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:buttonTint="@color/todo_personal_category"
+      android:text="@string/todo_category_personal"
+      android:textColor="@color/white">
+    </RadioButton>
+    <RadioButton
+      android:id="@+id/rdOther"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:buttonTint="@color/todo_other_category"
+      android:text="@string/todo_category_others"
+      android:textColor="@color/white">
+    </RadioButton>
+  </RadioGroup>
+  <Button
+    android:id="@+id/btnAddTask"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/todo_accent"
+    android:text="@string/todo_dialog_btb_add_task"
+    >
+  </Button>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/todo_background_todo_app"
+    android:orientation="vertical"
+    tools:context=".todoapp.TodoActivity">
+
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="32dp"
+      android:layout_marginVertical="44dp"
+      android:text="@string/todo_title"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:textSize="35sp"
+      android:textStyle="bold">
+    </TextView>
+
+    <!--TextView refactorizado con un estilo propio porqe vi cosas comunes entre este y el de tareas
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/todo_subtitle_text"
+      android:textAllCaps="true"
+      android:text="@string/todo_categories"
+      android:layout_marginHorizontal="32dp">
+    </TextView-->
+    <TextView
+      style="@style/TodoSubtitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/todo_categories">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvCategories"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+      style="@style/TodoSubtitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="@string/todo_tasks">
+
+    </TextView>
+
+    <!--TextView lo he refactorizado a un estilo que me he creado propio con cosas
+    comunes aquí y en el textview categorias
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/todo_subtitle_text"
+      android:textAllCaps="true"
+      android:layout_marginTop="32dp"
+      android:text="@string/todo_tasks"
+      android:layout_marginHorizontal="32dp">
+    </TextView-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvTasks"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="32dp"
+      android:layout_marginTop="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- BOTON DENTRO DEL LINEAR LAYOUT DE TAREAS PERO FUERA DEL RV lo he sacado al framelayout -->
+
+
+  </LinearLayout>
+  <!-- el color en un FAB es app:background tint
+ y para incluir la imagen del + se pone android:src y para tintar el icono con tint-->
+  <!--gravity end|bottom abajo derecha -->
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fabAddTask"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:backgroundTint="@color/todo_accent"
+    android:src="@android:drawable/ic_input_add"
+    app:fabSize="normal"
+    android:layout_gravity="end|bottom"
+    app:tint="@color/white">
+
+  </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</FrameLayout>

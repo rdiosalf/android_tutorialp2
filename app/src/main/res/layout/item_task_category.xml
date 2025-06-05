@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/viewContainerCat"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="160dp"
+  android:layout_height="90dp"
+  android:layout_marginHorizontal="8dp"
+  android:layout_marginVertical="16dp"
+  app:cardBackgroundColor="@color/todo_background_card"
+  app:cardCornerRadius="16dp">
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/tvCategoryName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:textSize="19sp"
+      android:textStyle="bold"
+      tools:text="hola" />
+
+    <!--espacio entre texto y divider le pongo un margin por encima en el divider -->
+    <View
+      android:layout_marginTop="4dp"
+      android:id="@+id/divider"
+      android:layout_width="match_parent"
+      android:layout_height="2dp"
+      tools:background="@color/white" />
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.cardview.widget.CardView>
+
