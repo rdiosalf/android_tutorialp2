@@ -25,7 +25,7 @@
   <string name="title_obesity_weight">Obesidad</string>
   <string name="description_obesity_weight">Estás MUY por encima de tu peso óptimo para tu peso y altura.</string>
 
-<!--todoapp-->
+  <!--todoapp-->
   <string name="todo_title">Bienvenido, ¿Que quieres hacer hoy?</string>
   <string name="todo_categories">Categorias</string>
   <string name="todo_tasks">Tareas</string>
@@ -36,10 +36,22 @@
   <string name="todo_category_others">Otros</string>
 
 
-
-
   <string name="todo_dialog_add_task">Añadir tarea</string>
   <string name="todo_dialog_btb_add_task">Crear tarea</string>
+
+  <!-- aplicación de settings -->
+
+  <string name="settings_dark_mode_title">Modo oscuro</string>
+  <string name="settings_dark_mode_description">Activa el modo oscuro para un cambio visual"</string>
+
+  <string name="settings_bluetooth_mode_title">Bluetooth</string>
+  <string name="settings_bluetooth_mode_description">Activa el bluetooth como comunicación"</string>
+
+  <string name="settings_volume_title">Sonido</string>
+
+
+  <string name="settings_vibration_title">Vibración</string>
+  <string name="settings_vibration_description">Activa o desactiva Vibración en llamadas"</string>
 
 
 </resources>

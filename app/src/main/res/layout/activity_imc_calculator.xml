@@ -125,8 +125,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stepSize="1"
-        android:valueFrom="120"
-        android:valueTo="200">
+        android:valueFrom="0"
+        android:valueTo="100">
 
       </com.google.android.material.slider.RangeSlider>
 

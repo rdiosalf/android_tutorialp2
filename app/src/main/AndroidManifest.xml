@@ -14,9 +14,18 @@
     android:theme="@style/Theme.AndroidTut"
     tools:targetApi="31">
     <activity
-      android:name=".todoapp.TodoActivity"
-      android:theme="@style/Theme.TodoApp"
+      android:name=".settings.SettingsActivity"
       android:exported="false" />
+    <activity
+      android:name=".superheroapp.DetailSuperheroActivity"
+      android:exported="false" />
+    <activity
+      android:name=".superheroapp.SuperHeroListActivity"
+      android:exported="false" />
+    <activity
+      android:name=".todoapp.TodoActivity"
+      android:exported="false"
+      android:theme="@style/Theme.TodoApp" />
     <activity
       android:name=".imccalculator.ResultIMCActivity"
       android:exported="false" />
@@ -48,5 +57,7 @@
             -->
     </activity>
   </application>
+
+  <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

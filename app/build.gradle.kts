@@ -34,6 +34,7 @@ android {
   buildFeatures {
     compose = true
   }
+  viewBinding { enable = true }
 }
 
 dependencies {
@@ -51,6 +52,25 @@ dependencies {
   implementation(libs.androidx.ui.tooling.preview)
   implementation(libs.androidx.material3)
   implementation(libs.firebase.crashlytics.buildtools)
+
+  //retrofit para consumo de apis
+/* esta era la sugerencia y les  he cambiado un poco el l nombre en el libs.versions.tom
+implementation(libs.retrofit)
+  implementation(libs.retrofit.converter.gson)
+  implementation(libs.google.gson)*/
+  implementation(libs.retrofit.core)
+  implementation(libs.retrofit.gson)
+  implementation(libs.google.gson)
+
+
+  //picasso
+  implementation(libs.picasso)
+
+  //datastore
+  implementation(libs.androidx.datastore)
+
+
+
   testImplementation(libs.junit)
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.androidx.espresso.core)

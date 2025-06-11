@@ -26,4 +26,18 @@
     android:layout_height="wrap_content"
     android:text="TodoApp" />
 
+
+  <Button
+    android:id="@+id/btnSuperApp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SuperApp" />
+
+  <Button
+    android:id="@+id/btnSettingsApp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SettingsApp" />
+
+
 </LinearLayout>
